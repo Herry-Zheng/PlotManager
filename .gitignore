@@ -1,0 +1,51 @@
+# Gradle files
+.gradle/
+build/
+.kotlin/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+*.log
+
+# Android Studio generated files and folders
+captures/
+.externalNativeBuild/
+.cxx/
+*.aab
+*.apk
+output-metadata.json
+
+# IntelliJ
+*.iml
+.idea/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Keystore files
+*.jks
+*.keystore
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Android Profiling
+*.hprof
+
+
+# 签名配置（如果项目用 properties 文件存密码）
+key.properties
+keystore.properties
+
+# 环境变量
+.env
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 可选：AAR、导航文件
+*.aar
+.navigation/

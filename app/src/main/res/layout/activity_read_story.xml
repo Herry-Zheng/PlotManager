@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7F7F7F"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_story_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="大纲名称"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/search_button"
+            app:tint="@android:color/white" />
+
+    </LinearLayout>
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:background="#7F7F7F"-->
+<!--        android:paddingStart="16dp"-->
+<!--        android:paddingEnd="16dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_story_title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:text="大纲名称"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_search"-->
+<!--            android:layout_width="32dp"-->
+<!--            android:layout_height="32dp"-->
+<!--            android:src="@android:drawable/ic_input_add"-->
+<!--            app:tint="@android:color/white" />-->
+
+<!--    </RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#E0E0E0"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tv_mode_overview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="大纲总览"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:background="@drawable/mode_button_selector"
+            android:layout_marginEnd="2dp" />
+
+        <TextView
+            android:id="@+id/tv_mode_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="历史操作"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:background="@drawable/mode_button_selector"
+            android:layout_marginStart="2dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.example.plotmanager.plot.PlotView
+            android:id="@+id/plot_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/btn_add_plot"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@android:drawable/ic_input_add"
+        android:background="@drawable/circle_button_gray"
+        app:tint="@android:color/white"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:elevation="8dp" />
+
+</LinearLayout>

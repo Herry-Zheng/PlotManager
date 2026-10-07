@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7F7F7F"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_export"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="导出所有大纲为JSON文件"
+            android:backgroundTint="#7F7F7F"
+            android:textColor="@android:color/white"
+            android:layout_margin="16dp" />
+
+        <Button
+            android:id="@+id/btn_import"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="从JSON文件导入大纲"
+            android:backgroundTint="#7F7F7F"
+            android:textColor="@android:color/white"
+            android:layout_margin="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="导出：将所有大纲及其节点数据整合为一个JSON文件。\n导入:解析该文件并添加/覆盖大纲。"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:lineSpacingExtra="4dp"
+            android:layout_margin="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
